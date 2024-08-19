@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Penpal Letter - Page 4</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .letter-container {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            width: 600px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .letter-container:hover {
+            transform: rotate(-2deg) scale(1.02);
+        }
+        .letter-header, .letter-footer {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .letter-body {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .letter-body span {
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+        .letter-body span:hover {
+            background-color: #ffe4e1;
+            color: #000;
+        }
+        .stamp {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcccb;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 2px dashed #333;
+            transform: rotate(10deg);
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+            color: #333;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-buttons a:hover {
+            background-color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        ul li:hover {
+            background-color: #ffe4e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="stamp">STAMP</div>
+        <div class="letter-header">
+            <h1>Favorite Songs & Playlist</h1>
+        </div>
+        <div class="letter-body">
+            <p><span>Hey again!</span> I thought I'd share some of my favorite songs with you. Here's my current playlist:</p>
+            <ul>
+                <li>1. "COME INSIDE OF MY HEART" by  IV OF SPADES</li>
+                <li>2. "BEWTICHED" by LAUFEY</li>
+                <li>3. "MISERY BUSSINESS" by PARAMORE</li>
+                <li>4. "HARD TIMES" by PARAMORE</li>
+                <li>5. "SACRIFICE" by THE WEEKND</li>
+            </ul>
+            <p>What are your favorite songs right now? I'd love to hear your recommendations!</p>
+        </div>
+        <div class="letter-footer">
+            <p>Sincerely,<br>Your Penpal</p>
+        </div>
+        <div class="nav-buttons">
+            <a href="page3.html">Previous Page</a>
+            <a href="page5.html">FAVORITE PHOTO OF THE MONTH</a>
+        </div>
+    </div>
+</body>
+</html>

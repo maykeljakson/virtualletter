@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Penpal Letter - Page 3</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .letter-container {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            width: 600px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .letter-container:hover {
+            transform: rotate(-2deg) scale(1.02);
+        }
+        .letter-header, .letter-footer {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .letter-body {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .letter-body span {
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+        .letter-body span:hover {
+            background-color: #ffe4e1;
+            color: #000;
+        }
+        .stamp {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcccb;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 2px dashed #333;
+            transform: rotate(10deg);
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+            color: #333;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-buttons a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="stamp">STAMP</div>
+        <div class="letter-header">
+            <h1>To Malwine,</h1>
+        </div>
+        <div class="letter-body">
+            <p><span>Thanks</span> also for the videocall we made past month i truly appreciate it so much . But i always dream of having a real conversation with you while watching the beautiful sceneries of the world </p>
+            <p>We dont know what will happen tomorrow or upcoming days but i know everyday has a purpose our connection has a Purpose ,i always Pray for you Everyday<span>take care!</span></p>
+        </div>
+        <div class="letter-footer">
+            <p>Sincerely,<br></p>
+        </div>
+        <div class="nav-buttons">
+            <a href="page2.html">Previous Page</a>
+            <a href="page4.html">PLaylist</a>
+        </div>
+    </div>
+</body>
+</html>
